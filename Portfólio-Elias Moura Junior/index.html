@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio | Elias Moura</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #0d0e11;
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #020617;
+      padding: 30px 15px;
+      text-align: center;
+    }
+
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #38bdf8;
+      margin-bottom: 15px;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      margin-bottom: 5px;
+    }
+
+    header p {
+      color: #94a3b8;
+      font-size: 1rem;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 15px;
+    }
+
+    h2 {
+      margin-bottom: 15px;
+      border-left: 4px solid #38bdf8;
+      padding-left: 10px;
+      font-size: 1.4rem;
+    }
+
+    /* ===== HABILIDADES ===== */
+    .skills {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .skill {
+      background: #020617;
+      padding: 20px;
+      border-radius: 8px;
+      flex: 1;
+      min-width: 220px;
+      text-align: center;
+    }
+
+    /* ===== PROJETOS ===== */
+    .projects {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .project {
+      background: #020617;
+      padding: 20px;
+      border-radius: 8px;
+      flex: 1;
+      min-width: 250px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #94a3b8;
+      font-size: 0.9rem;
+    }
+
+    /* ===== RESPONSIVO (CELULAR) ===== */
+    @media (max-width: 768px) {
+
+      header {
+        padding: 25px 10px;
+      }
+
+      .profile-pic {
+        width: 100px;
+        height: 100px;
+      }
+
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      header p {
+        font-size: 0.95rem;
+      }
+
+      section {
+        margin: 25px auto;
+      }
+
+      .skills,
+      .projects {
+        flex-direction: column;
+      }
+
+      .skill,
+      .project {
+        min-width: 100%;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <div class="profile-wrapper">
+      <img src="imagens/imgdeperfil.jpg" alt="Foto de perfil" class="profile-pic">
+    </div>
+    <h1>Elias Moura Jr</h1>
+    <p>Desenvolvedor Front-end | HTML & CSS</p>
+  </div>
+</header>
+
+
+  <section>
+    <h2>Sobre mim</h2>
+    <p>
+      Sou desenvolvedor iniciante focado em HTML e CSS, criando layouts modernos,
+      responsivos e bem estruturados. Estou em constante aprendizado e buscando
+      oportunidades para evoluir na área de programação.
+    </p>
+  </section>
+
+  <section>
+    <h2>Habilidades</h2>
+    <div class="skills">
+      <div class="skill">
+        <h3>HTML5</h3>
+        <p>Estruturação semântica de páginas web</p>
+      </div>
+
+      <div class="skill">
+        <h3>CSS3</h3>
+        <p>Layouts responsivos com Flexbox</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Projetos</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>Cafeteria</h3>
+        <p>
+  Criação de site para cafeteria com design moderno e responsivo,
+  desenvolvido em HTML e CSS, destacando cardápio, ambiente
+  e informações essenciais para fortalecer a presença online do negócio.
+</p>
+      </div>
+      <div class="project">
+        <h3>Barbearia</h3>
+    <p>
+  Site institucional para barbearia desenvolvido com HTML e CSS,
+  focado em um layout responsivo e visual profissional,
+  valorizando os serviços, horários de funcionamento
+  e o contato direto com os clientes.
+</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 - Elias Moura
+  </footer>
+
+</body>
+</html>
+
